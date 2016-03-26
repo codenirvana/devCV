@@ -1,0 +1,7 @@
+# Site settings
+title: DevCV
+description: > # this means to ignore newlines until "baseurl:"
+  Developer CV
+
+# Build settings
+markdown: kramdown

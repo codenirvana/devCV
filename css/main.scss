@@ -1,0 +1,226 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+*, *:after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: inherit;
+    white-space: inherit;
+}
+body {
+    background: #151718;
+    font-family: Menlo, Consolas, monospace;
+    font-size: 16px;
+    line-height: 25px;
+}
+::-moz-selection {
+    background: rgba(255, 255, 255, .15);
+}
+::selection {
+    background: rgba(255, 255, 255, .15);
+}
+::-webkit-scrollbar {
+    display: none;
+}
+.clearfix{
+    clear: both;
+}
+main, aside, aside span, pre, code, .code-content, .code-content .code-line, pre .comment-item .comment {
+    float: left;
+    width: 100%;
+}
+aside {
+    width: 60px;
+    font-size: 14px;
+}
+aside span {
+    padding-left: 10px;
+    color: #404b53;
+    background: #0e1112;
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+pre {
+    width: calc(100% - 60px);
+    float: left;
+    padding-left: 10px;
+}
+code {
+    margin-bottom: 25px;
+}
+code .arrow {
+    position: absolute;
+    top: 7px;
+    left: -30px;
+    cursor: pointer;
+    display: inline-block;
+    background: #272F35;
+    width: .5em;
+    height: .65em;
+    border-radius: 50px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+code .arrow:before, code .arrow:after {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0em;
+    border-style: solid;
+    position: absolute;
+}
+code .arrow:before {
+    left: 0;
+    border-width: .35em 0 .35em .35em;
+    border-color: transparent transparent transparent #0e1112;
+}
+code .arrow:after {
+    right: 0;
+    border-width: .35em 0 .35em .35em;
+    border-color: #0e1112 transparent;
+}
+code .arrow:hover {
+    background: #55b5db;
+}
+pre code.close .arrow {
+    background: #ccc;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+pre code.gutter-new:before{
+    content: '';
+    width: 2px;
+    height: calc(100% - 10px);
+    background: #9fca56;
+    position: absolute;
+    left: -70px;
+    top: 5px;
+}
+pre code:after {
+    content: "}";
+    width: 100%;
+    color: #d4d7d6;
+}
+.code-selection {
+    width: 100%;
+    float: left;
+    color: #9fca56;
+    white-space: nowrap;
+}
+.code-selection:before {
+    content: ".";
+    color: #858d8a;
+}
+.code-selection:after {
+    content: "{";
+    color: #d4d7d6;
+    margin-left: 5px;
+}
+.code-selection.collapsed:after {
+    content: '{...'
+}
+.code-content {
+    padding-left: 40px;
+    white-space: nowrap;
+}
+.code-content:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 3px;
+    height: calc(100% - 6px);
+    width: 1px;
+    border-left: 1px solid rgba(245, 250, 255, 0.04);
+}
+.code-content .code-line.gutter-new:before{
+    content: '';
+    width: 2px;
+    height: 100%;
+    background: #9fca56;
+    position: absolute;
+    left: -110px;
+    top: 0px;
+}
+.code-content .code-line .code-attr {
+    color: #a074c4;
+}
+.code-content .code-line .code-attr:after {
+    content: ": ";
+    font-style: normal;
+    color: #858d8a;
+    margin-left: 2.5px;
+}
+.code-content .code-line .code-value, .code-content .code-line .code-value a {
+    color: #cd3f45;
+}
+.code-content .code-line .code-value a:hover {
+    background: rgba(255, 255, 255, .2);
+}
+.code-content .code-line .code-value:after, .code-content .code-line.value-content:after {
+    content: ";";
+    color: #858d8a;
+}
+.code-content .code-line.value-content .code-value {
+    color: #55b5db;
+}
+.code-content .code-line.value-content .code-value:before, .code-content .code-line.value-content .code-value:after {
+    content: '"';
+    color: #55b5db;
+}
+.code-content .code-line.value-number .code-value {
+    color: #cd3f45;
+}
+.code-content .code-line .code-value .value-number-percent {
+    color: #9fca56;
+}
+pre .comment-item .arrow {
+    display: none;
+}
+pre .comment-item:after {
+    content: "";
+}
+pre .comment-item .comment:before {
+    content: "//";
+    color: #d4d7d6;
+}
+pre .comment-item .comment {
+    color: #858d8a;
+    margin-bottom: 25px;
+    white-space: nowrap;
+}
+@media screen and (max-width: 500px) {
+    body {
+        font-size: 13px;
+    }
+    aside {
+        width: 50px;
+        font-size: 11px;
+    }
+    pre {
+        width: calc(100% - 50px);
+    }
+    aside span {
+        padding-left: 5px;
+    }
+    code .arrow {
+        top: 9px;
+    }
+    pre code.gutter-new:before{
+        left: -60px;
+        width: 1px;
+    }
+    .code-content .code-line.gutter-new:before{
+        left: -100px;
+        width: 1px;
+    }
+}
