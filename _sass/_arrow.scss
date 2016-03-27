@@ -9,11 +9,11 @@
 }
 .arrow {
     position: absolute;
-    top: 7px;
-    left: -30px;
+    top: $arrow-top;
+    left: $arrow-left;
     cursor: pointer;
     display: inline-block;
-    background: #272F35;
+    background: $arrow-bg;
     width: 0.5em;
     height: 0.65em;
     border-radius: 50px;
@@ -21,14 +21,14 @@
     &:before {
         @extend %arrow-pseudo;
         left: 0;
-        border-color: transparent transparent transparent #0e1112;
+        border-color: transparent transparent transparent $count-bg;
     }
     &:after {
         @extend %arrow-pseudo;
         right: 0;
-        border-color: #0e1112 transparent;
+        border-color: $count-bg transparent;
     }
     &:hover {
-        background: #55b5db;
+        background: $arrow-hover-bg;
     }
 }

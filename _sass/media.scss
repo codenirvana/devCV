@@ -6,8 +6,8 @@
         width: calc(100% - 50px);
     }
     aside {
-        width: 50px;
-        font-size: 11px;
+        width: ($count-width - 10);
+        font-size: ($count-font-size - 3);
         span {
             padding-left: 5px;
         }
@@ -16,7 +16,7 @@
         top: 9px;
     }
     code.gutter-new:before {
-        left: -60px;
+        left: -($count-width);
         width: 1px;
     }
     code .code-content .code-line.gutter-new:before {

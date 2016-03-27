@@ -1,0 +1,57 @@
+/* Seti Colors */
+$seti-black: #151718;
+$seti-black-dark: #0e1112;
+$seti-black-light: #272F35;
+$seti-blue-grey: #404b53;
+$seti-grey: #858d8a;
+$seti-grey-light: #d4d7d6;
+$seti-blue: #55b5db;
+$seti-green: #9fca56;
+$seti-purple: #a074c4;
+$seti-red: #cd3f45;
+
+/* Required Variables */
+$base-bg: $seti-black;
+$base-font: Menlo, Consolas, monospace;
+$base-font-size: 16px;
+$base-line-height: 25px;
+
+$light-white: rgba(255, 255, 255, .15);
+$lightest-white: rgba(245, 250, 255, 0.04);
+
+$count-width: 60px;
+$count-font-size: 14px;
+$count-padding-left: 10px;
+$count-col: $seti-blue-grey;
+$count-bg: $seti-black-dark;
+
+$code-padding-left: 10px;
+$code-margin-bottom: 25px;
+
+$code-indent: 40px;
+$code-indent-line-bg: $lightest-white;
+$code-indent-line-width: 1px;
+
+$selection-col: $seti-green;
+$selection-dot-col: $seti-grey;
+$brace-col: $seti-grey-light;
+
+$code-attr-col: $seti-purple;
+$code-attr-colon-col: $seti-grey;
+
+$code-value-col: $seti-red;
+$code-value-semicolon-col: $seti-grey;
+$code-value-percent-col: $seti-green;
+$code-value-content-col: $seti-blue;
+
+$arrow-top: 7px;
+$arrow-left: -( ( $count-width + $code-padding-left ) / 2 - 15);
+$arrow-bg: $seti-black-light;
+$arrow-hover-bg: $seti-blue;
+$arrow-close-bg: #ccc;
+
+$gutter-bg: $seti-green;
+$gutter-width: 2px;
+
+$comment-col: $seti-grey;
+$comment-slash-col: $seti-grey-light;

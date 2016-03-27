@@ -14,15 +14,15 @@
 }
 body {
     background: $base-bg;
-    font-family: Menlo, Consolas, monospace;
-    font-size: 16px;
-    line-height: 25px;
+    font-family: $base-font;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
 }
  ::-moz-selection {
-    background: rgba(255, 255, 255, .15);
+    background: $light-white;
 }
  ::selection {
-    background: rgba(255, 255, 255, .15);
+    background: $light-white;
 }
  ::-webkit-scrollbar {
     display: none;
@@ -42,39 +42,39 @@ pre .comment-item .comment {
     width: 100%;
 }
 aside {
-    width: 60px;
-    font-size: 14px;
+    width: $count-width;
+    font-size: $count-font-size;
     span {
-        padding-left: 10px;
-        color: #404b53;
-        background: #0e1112;
+        padding-left: $count-padding-left;
+        color: $count-col;
+        background: $count-bg;
         cursor: default;
         @include prefix(user-select, none, webkit moz ms);
     }
 }
 pre {
-    width: calc(100% - 60px);
+    width: calc(100% - #{$count-width});
     float: left;
-    padding-left: 10px;
+    padding-left: $code-padding-left;
 }
 code {
-    margin-bottom: 25px;
+    margin-bottom: $code-margin-bottom;
     &:after {
         content: "}";
         width: 100%;
-        color: #d4d7d6;
+        color: $brace-col;
     }
     &.close .arrow {
-        background: #ccc;
+        background: $arrow-close-bg;
         transform: rotate(0deg);
     }
     &.gutter-new:before {
         content: '';
-        width: 2px;
+        width: $gutter-width;
         height: calc(100% - 10px);
-        background: #9fca56;
+        background: $gutter-bg;
         position: absolute;
-        left: -70px;
+        left: -($count-width + $code-padding-left);
         top: 5px;
     }
     @import "_arrow", "code-selection", "_code-content";
@@ -87,12 +87,12 @@ code {
         display: none;
     }
     .comment {
-        color: #858d8a;
-        margin-bottom: 25px;
+        color: $comment-col;
+        margin-bottom: $code-margin-bottom;
         white-space: nowrap;
         &:before {
             content: "//";
-            color: #d4d7d6;
+            color: $comment-slash-col;
         }
     }
 }

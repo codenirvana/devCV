@@ -3,6 +3,6 @@
 ---
 @charset "utf-8";
 
-$base-bg: #151718;
+@import "../_themes/seti.scss";
 
 @import "base", "media";
