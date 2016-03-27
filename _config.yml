@@ -2,6 +2,6 @@
 title: DevCV
 description: > # this means to ignore newlines until "baseurl:"
   Developer CV
-
+baseurl: "/devCV"
 # Build settings
 markdown: kramdown
