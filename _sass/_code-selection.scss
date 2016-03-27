@@ -1,0 +1,18 @@
+.code-selection {
+    width: 100%;
+    float: left;
+    color: #9fca56;
+    white-space: nowrap;
+    &:before {
+        content: ".";
+        color: #858d8a;
+    }
+    &:after {
+        content: "{";
+        color: #d4d7d6;
+        margin-left: 5px;
+    }
+    &.collapsed:after {
+        content: '{...';
+    }
+}

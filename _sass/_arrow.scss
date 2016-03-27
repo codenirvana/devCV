@@ -1,0 +1,34 @@
+%arrow-pseudo {
+    display: inline-block;
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    position: absolute;
+    border-width: 0.35em 0 0.35em 0.35em;
+}
+.arrow {
+    position: absolute;
+    top: 7px;
+    left: -30px;
+    cursor: pointer;
+    display: inline-block;
+    background: #272F35;
+    width: 0.5em;
+    height: 0.65em;
+    border-radius: 50px;
+    transform: rotate(90deg);
+    &:before {
+        @extend %arrow-pseudo;
+        left: 0;
+        border-color: transparent transparent transparent #0e1112;
+    }
+    &:after {
+        @extend %arrow-pseudo;
+        right: 0;
+        border-color: #0e1112 transparent;
+    }
+    &:hover {
+        background: #55b5db;
+    }
+}

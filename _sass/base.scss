@@ -1,0 +1,98 @@
+@import "_mixin";
+*,
+*:after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    list-style-type: none;
+    outline: none;
+    font-family: inherit;
+    white-space: inherit;
+}
+body {
+    background: $base-bg;
+    font-family: Menlo, Consolas, monospace;
+    font-size: 16px;
+    line-height: 25px;
+}
+ ::-moz-selection {
+    background: rgba(255, 255, 255, .15);
+}
+ ::selection {
+    background: rgba(255, 255, 255, .15);
+}
+ ::-webkit-scrollbar {
+    display: none;
+}
+.clearfix {
+    clear: both;
+}
+main,
+aside,
+aside span,
+pre,
+code,
+.code-content,
+.code-content .code-line,
+pre .comment-item .comment {
+    float: left;
+    width: 100%;
+}
+aside {
+    width: 60px;
+    font-size: 14px;
+    span {
+        padding-left: 10px;
+        color: #404b53;
+        background: #0e1112;
+        cursor: default;
+        @include prefix(user-select, none, webkit moz ms);
+    }
+}
+pre {
+    width: calc(100% - 60px);
+    float: left;
+    padding-left: 10px;
+}
+code {
+    margin-bottom: 25px;
+    &:after {
+        content: "}";
+        width: 100%;
+        color: #d4d7d6;
+    }
+    &.close .arrow {
+        background: #ccc;
+        transform: rotate(0deg);
+    }
+    &.gutter-new:before {
+        content: '';
+        width: 2px;
+        height: calc(100% - 10px);
+        background: #9fca56;
+        position: absolute;
+        left: -70px;
+        top: 5px;
+    }
+    @import "_arrow", "code-selection", "_code-content";
+}
+.comment-item {
+    &:after {
+        content: "";
+    }
+    .arrow {
+        display: none;
+    }
+    .comment {
+        color: #858d8a;
+        margin-bottom: 25px;
+        white-space: nowrap;
+        &:before {
+            content: "//";
+            color: #d4d7d6;
+        }
+    }
+}
