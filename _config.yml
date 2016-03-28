@@ -2,6 +2,7 @@
 title: DevCV
 description: > # this means to ignore newlines until "baseurl:"
   Developer CV
+theme: solarized
 
 # Build settings
 markdown: kramdown

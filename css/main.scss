@@ -3,6 +3,6 @@
 ---
 @charset "utf-8";
 
-@import "../_themes/seti.scss";
+@import "../_themes/{{site.theme}}.scss";
 
 @import "base", "media";
