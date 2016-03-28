@@ -45,7 +45,7 @@ $code-value-percent-col: $seti-green;
 $code-value-content-col: $seti-blue;
 
 $arrow-top: 7px;
-$arrow-left: -( ( $count-width + $code-padding-left ) / 2 - 15);
+$arrow-left: -( $code-padding-left + 20 );
 $arrow-bg: $seti-black-light;
 $arrow-hover-bg: $seti-blue;
 $arrow-close-bg: #ccc;

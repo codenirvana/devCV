@@ -32,7 +32,7 @@ $code-value-percent-col: #9fca56;
 $code-value-content-col: #55b5db;
 
 $arrow-top: 7px;
-$arrow-left: -( ( $count-width + $code-padding-left ) / 2 - 15);
+$arrow-left: -( $code-padding-left + 20 );
 $arrow-bg: #272F35;
 $arrow-hover-bg: #55b5db;
 $arrow-close-bg: #ccc;
