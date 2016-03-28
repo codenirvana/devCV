@@ -1,0 +1,57 @@
+/* Solarized Colors */
+$sol-primary: #002B36;
+$sol-secondary: #073642;
+$sol-grey: #839496;
+$sol-grey-light: #d4d7d6;
+$sol-grey-dark: #4E6C72;
+$sol-blue: #268bd2;
+$sol-green: #2aa198;
+$sol-green-light: #859900;
+$sol-pink: #d33682;
+$sol-brown: #b58900;
+
+/* Required Variables */
+$base-bg: $sol-primary;
+$base-font: Menlo, Consolas, monospace;
+$base-font-size: 16px;
+$base-line-height: 25px;
+
+$light-white: rgba(255, 255, 255, .15);
+$lightest-white: rgba(245, 250, 255, 0.04);
+
+$count-width: 60px;
+$count-font-size: 14px;
+$count-padding-left: 10px;
+$count-col: $sol-grey;
+$count-bg: $sol-secondary;
+
+$code-padding-left: 10px;
+$code-margin-bottom: 25px;
+
+$code-indent: 40px;
+$code-indent-line-bg: $lightest-white;
+$code-indent-line-width: 1px;
+
+$selection-col: $sol-blue;
+$selection-dot-col: $sol-blue;
+$brace-col: $sol-blue;
+
+$code-attr-col: $sol-brown;
+$code-attr-colon-col: $sol-grey;
+
+$code-value-col: $sol-green;
+$code-value-semicolon-col: $sol-grey;
+$code-value-percent-col: $sol-green;
+$code-value-content-col: $sol-green;
+
+$arrow-top: 7px;
+$arrow-left: -( $code-padding-left + 20 );
+$arrow-bg: $sol-grey-dark;
+$arrow-hover-bg: $sol-grey;
+$arrow-close-bg: $sol-pink;
+
+$gutter-bg: $sol-green-light;
+$gutter-width: 2px;
+
+$comment-col: $sol-grey;
+$comment-slash-col: $sol-grey;
