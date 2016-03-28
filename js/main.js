@@ -53,20 +53,6 @@ $(function() {
         })
         .done(function() {
             lineCountWrite();
-            $(window).hover(function(e) {
-                var pY = e.pageY;
-                for (var c = 1; c <= lineCount; c++) {
-                    if (pY > $("aside span:nth-child(" + c + ")").offset().top && pY < $("aside span:nth-child(" + c + ")").offset().top + 25) {
-                        $("aside span:nth-child(" + c + ")").css({
-                            color: "#55b5db"
-                        });
-                    }
-                }
-            }, function() {
-                $("aside span").css({
-                    color: "#404b53"
-                });
-            });
             $("code").append('<span class="arrow"></span>');
             $("code .arrow").click(function() {
                 $(this).parent().toggleClass('close');
