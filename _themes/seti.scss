@@ -12,12 +12,7 @@ $seti-red: #cd3f45;
 
 /* Required Variables */
 $base-bg: $seti-black;
-$base-font: Menlo, Consolas, monospace;
 $base-font-size: 16px;
-$base-line-height: 25px;
-
-$light-white: rgba(255, 255, 255, .15);
-$lightest-white: rgba(245, 250, 255, 0.04);
 
 $count-width: 60px;
 $count-font-size: 14px;
@@ -26,7 +21,6 @@ $count-col: $seti-blue-grey;
 $count-bg: $seti-black-dark;
 
 $code-padding-left: 10px;
-$code-margin-bottom: 25px;
 
 $code-indent: 40px;
 $code-indent-line-bg: $lightest-white;
@@ -44,7 +38,7 @@ $code-value-semicolon-col: $seti-grey;
 $code-value-percent-col: $seti-green;
 $code-value-content-col: $seti-blue;
 
-$arrow-top: 7px;
+$arrow-top: floor($base-line-height / 3) - 1;
 $arrow-left: -( $code-padding-left + 20 );
 $arrow-bg: $seti-black-light;
 $arrow-hover-bg: $seti-blue;

@@ -1,10 +1,5 @@
 $base-bg: #151718;
-$base-font: Menlo, Consolas, monospace;
 $base-font-size: 16px;
-$base-line-height: 25px;
-
-$light-white: rgba(255, 255, 255, .15);
-$lightest-white: rgba(245, 250, 255, 0.04);
 
 $count-width: 60px;
 $count-font-size: 14px;
@@ -13,7 +8,6 @@ $count-col: #404b53;
 $count-bg: #0e1112;
 
 $code-padding-left: 10px;
-$code-margin-bottom: 25px;
 
 $code-indent: 40px;
 $code-indent-line-bg: $lightest-white;
@@ -31,7 +25,7 @@ $code-value-semicolon-col: #858d8a;
 $code-value-percent-col: #9fca56;
 $code-value-content-col: #55b5db;
 
-$arrow-top: 7px;
+$arrow-top: floor($base-line-height / 3) - 1;
 $arrow-left: -( $code-padding-left + 20 );
 $arrow-bg: #272F35;
 $arrow-hover-bg: #55b5db;
