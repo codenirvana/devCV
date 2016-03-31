@@ -26,6 +26,9 @@
                 content: ";";
                 color: $code-value-semicolon-col;
             }
+            &.value-number{
+                color: $code-value-number-col;
+            }
             .value-number-percent {
                 color: $code-value-percent-col;
             }
