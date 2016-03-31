@@ -10,7 +10,7 @@ $(function() {
         }
     }
 
-    $.getJSON("/data.json", function(data) {
+    $.getJSON("/devCV/data.json", function(data) {
             var codeItems = [],
                 valueContent = data['meta']['quotes'],
                 links = data['meta']['links'],
