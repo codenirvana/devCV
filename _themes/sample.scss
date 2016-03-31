@@ -1,17 +1,9 @@
 $base-bg: #151718;
-$base-font-size: 16px;
 
-$count-width: 60px;
-$count-font-size: 14px;
-$count-padding-left: 10px;
 $count-col: #404b53;
 $count-bg: #0e1112;
 
-$code-padding-left: 10px;
-
-$code-indent: 40px;
 $code-indent-line-bg: $lightest-white;
-$code-indent-line-width: 1px;
 
 $selection-col: #9fca56;
 $selection-dot-col: #858d8a;
@@ -26,14 +18,11 @@ $code-value-number-col: #cd3f45;
 $code-value-percent-col: #9fca56;
 $code-value-content-col: #55b5db;
 
-$arrow-top: floor($base-line-height / 3) - 1;
-$arrow-left: -( $code-padding-left + 20 );
 $arrow-bg: #272F35;
 $arrow-hover-bg: #55b5db;
 $arrow-close-bg: #ccc;
 
 $gutter-bg: #9fca56;
-$gutter-width: 2px;
 
 $comment-col: #858d8a;
 $comment-slash-col: #d4d7d6;

@@ -12,19 +12,11 @@ $sol-brown: #b58900;
 
 /* Required Variables */
 $base-bg: $sol-primary;
-$base-font-size: 16px;
 
-$count-width: 60px;
-$count-font-size: 14px;
-$count-padding-left: 10px;
 $count-col: $sol-grey;
 $count-bg: $sol-secondary;
 
-$code-padding-left: 10px;
-
-$code-indent: 40px;
 $code-indent-line-bg: $lightest-white;
-$code-indent-line-width: 1px;
 
 $selection-col: $sol-blue;
 $selection-dot-col: $sol-blue;
@@ -39,14 +31,11 @@ $code-value-number-col: $sol-green;
 $code-value-percent-col: $sol-green;
 $code-value-content-col: $sol-green;
 
-$arrow-top: floor($base-line-height / 3) - 1;
-$arrow-left: -( $code-padding-left + 20 );
 $arrow-bg: $sol-grey-dark;
 $arrow-hover-bg: $sol-grey;
 $arrow-close-bg: $sol-pink;
 
 $gutter-bg: $sol-green-light;
-$gutter-width: 2px;
 
 $comment-col: $sol-grey;
 $comment-slash-col: $sol-grey;

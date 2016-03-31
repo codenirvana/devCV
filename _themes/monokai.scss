@@ -13,19 +13,11 @@ $mon-yellow: #e6db74;
 
 /* Required Variables */
 $base-bg: $mon-primary;
-$base-font-size: 16px;
 
-$count-width: 60px;
-$count-font-size: 14px;
-$count-padding-left: 10px;
 $count-col: $mon-grey;
 $count-bg: $mon-secondary;
 
-$code-padding-left: 10px;
-
-$code-indent: 40px;
 $code-indent-line-bg: $lightest-white;
-$code-indent-line-width: 1px;
 
 $selection-col: $mon-green;
 $selection-dot-col: $mon-green;
@@ -40,14 +32,11 @@ $code-value-number-col: $mon-purple;
 $code-value-percent-col: $mon-pink;
 $code-value-content-col: $mon-yellow;
 
-$arrow-top: floor($base-line-height / 3) - 1;
-$arrow-left: -( $code-padding-left + 20 );
 $arrow-bg: $mon-grey;
 $arrow-hover-bg: $mon-white-light;
 $arrow-close-bg: $mon-white;
 
 $gutter-bg: $mon-green-dark;
-$gutter-width: 2px;
 
 $comment-col: $mon-white-light;
 $comment-slash-col: $mon-white-light;

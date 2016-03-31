@@ -3,11 +3,25 @@
 ---
 @charset "utf-8";
 
+$base-font-size: {{site.base-font-size}};
+$base-font: {{site.base-font}};
+$base-line-height: {{site.base-line-height}};
+
+$count-width: {{site.count-width}};
+$count-font-size: {{site.count-font-size}};
+$count-padding-left: {{site.count-padding-left}};
+$code-padding-left: {{site.code-padding-left}};
+
+$code-indent: {{site.code-indent}};
+$code-indent-line-width: {{site.code-indent-line-width}};
+
+$gutter-width: {{site.gutter-width}};
+
+$arrow-top: floor($base-line-height / 3) - 1;
+$arrow-left: -( $code-padding-left + 20 );
+
 $light-white: rgba(255, 255, 255, .15);
 $lightest-white: rgba(245, 250, 255, 0.04);
-
-$base-font: Menlo, Consolas, monospace;
-$base-line-height: 25px;
 
 @import "../_themes/{{site.theme}}.scss";
 @import "base", "media";
