@@ -1,0 +1,42 @@
+/* Monokai Colors */
+$mon-primary: #282828;
+$mon-secondary: #303030;
+$mon-white: #fff;
+$mon-white-light: #f8f8f2;
+$mon-grey: #A6A69D;
+$mon-green: #a6e22e;
+$mon-green-dark: #529b2f;
+$mon-blue: #66d9ef;
+$mon-pink: #f92672;
+$mon-purple: #ae81ff;
+$mon-yellow: #e6db74;
+
+/* Required Variables */
+$base-bg: $mon-primary;
+
+$count-col: $mon-grey;
+$count-bg: $mon-secondary;
+
+$code-indent-line-bg: $lightest-white;
+
+$selection-col: $mon-green;
+$selection-dot-col: $mon-green;
+$brace-col: $mon-white-light;
+
+$code-attr-col: $mon-blue;
+$code-attr-colon-col: $mon-white-light;
+
+$code-value-col: $mon-blue;
+$code-value-semicolon-col: $mon-white-light;
+$code-value-number-col: $mon-purple;
+$code-value-percent-col: $mon-pink;
+$code-value-content-col: $mon-yellow;
+
+$arrow-bg: $mon-grey;
+$arrow-hover-bg: $mon-white-light;
+$arrow-close-bg: $mon-white;
+
+$gutter-bg: $mon-green-dark;
+
+$comment-col: $mon-white-light;
+$comment-slash-col: $mon-white-light;

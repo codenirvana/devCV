@@ -17,5 +17,9 @@
       "I-am":{
          "Name":"Your Name"
       }
-   }
+  },
+  "comments":{
+      "top":"",
+      "bottom":""
+  }
 }

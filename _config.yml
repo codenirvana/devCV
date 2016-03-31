@@ -5,3 +5,20 @@ description: > # this means to ignore newlines until "baseurl:"
 baseurl: "/devCV"
 # Build settings
 markdown: kramdown
+
+# Theme settings
+theme: solarized
+
+base-font-size: 16px
+base-font: "Menlo, Consolas, monospace"
+base-line-height: 25px
+
+count-width: 60px
+count-font-size: 14px
+count-padding-left: 10px
+code-padding-left: 10px
+
+code-indent: 40px
+code-indent-line-width: 1px
+
+gutter-width: 2px
