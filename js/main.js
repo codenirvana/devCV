@@ -89,7 +89,6 @@ $(function() {
         $(".settings-options li").click(function(){
             var theme = $(this).text().toLowerCase();
             $("#css").attr('href', "/devCV/css/"+theme+".css");
-            console.log(baseurl);
             $(".settings-options li").removeClass("selected");
             $(this).addClass("selected");
         });
