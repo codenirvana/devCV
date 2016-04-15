@@ -95,3 +95,43 @@ code {
         }
     }
 }
+.settings {
+    position: absolute;
+    right: 25px;
+    top: 10px;
+    svg {
+        cursor: pointer;
+        transition: transform 0.5s;
+        path{
+            fill: rgba(255, 255, 255, 0.2);
+        }
+        &:hover {
+            transform: rotate(-45deg);
+        }
+    }
+    .settings-options{
+        display: none;
+        position: absolute;
+        left: -30px;
+        text-align: center;
+        ul{
+            li{
+                background: rgba(255, 255, 255, 0.1);
+                color: #F3F3F3;
+                border-radius: 3px;
+                padding: 0 5px;
+                margin-bottom: 5px;
+                cursor: pointer;
+                &.selected {
+                    background: rgba(255, 255, 255, 0.3);
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &.open{
+        svg path{
+            fill: rgba(255, 255, 255, 0.8);
+        }
+    }
+}

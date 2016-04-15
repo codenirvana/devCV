@@ -81,4 +81,16 @@ $(function() {
             alert('Error Loading, Please Refresh!');
         });
 
+        $(".settings svg").click(function(){
+            $(".settings").toggleClass("open");
+            $(".settings-options").slideToggle();
+        });
+
+        $(".settings-options li").click(function(){
+            var theme = $(this).text().toLowerCase();
+            $("#css").attr('href', "/devCV/css/"+theme+".css");
+            console.log(baseurl);
+            $(".settings-options li").removeClass("selected");
+            $(this).addClass("selected");
+        });
 });
