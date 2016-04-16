@@ -97,7 +97,7 @@ code {
 }
 .settings {
     position: absolute;
-    right: 25px;
+    right: 40px;
     top: 10px;
     svg {
         cursor: pointer;
@@ -122,6 +122,9 @@ code {
                 padding: 0 5px;
                 margin-bottom: 5px;
                 cursor: pointer;
+                &:hover{
+                    right: 5px;
+                }
                 &.selected {
                     background: rgba(255, 255, 255, 0.3);
                     font-weight: bold;
@@ -133,5 +136,8 @@ code {
         svg path{
             fill: rgba(255, 255, 255, 0.8);
         }
+    }
+    @media screen and (max-width: 400px) {
+        display: none;
     }
 }
