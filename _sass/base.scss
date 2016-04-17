@@ -93,10 +93,13 @@ code {
             content: "//";
             color: $comment-slash-col;
         }
+        a {
+            color: $code-value-col;
+        }
     }
 }
 .settings {
-    position: absolute;
+    position: fixed;
     right: 40px;
     top: 10px;
     svg {
