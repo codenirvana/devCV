@@ -93,5 +93,8 @@ code {
             content: "//";
             color: $comment-slash-col;
         }
+        a {
+            color: $code-value-col;
+        }
     }
 }
