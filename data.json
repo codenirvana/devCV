@@ -34,11 +34,6 @@
            "Blog":"/blog",
            "E-Mail":"admin@codenirvana.in"
         },
-        "About":{
-           "Country":"India",
-           "City":"Jaipur",
-           "Age":"20"
-        },
         "Skills":{
            "Python":"50%",
            "C++":"60%",
