@@ -3,3 +3,4 @@
 
 ## ToDo
 - [ ] Restructure data.json
+- [ ] Added Installation Guide
