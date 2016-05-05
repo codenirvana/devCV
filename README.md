@@ -4,3 +4,4 @@
 ## ToDo
 - [ ] Restructure data.json
 - [ ] Add Installation Guide
+- [ ] Update DEMO
