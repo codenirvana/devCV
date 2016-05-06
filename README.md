@@ -1,5 +1,4 @@
-# devCV :construction:
-[Developer CV](https://uditvasu.net/devCV/)
+# :construction: devCV [DEMO](https://uditvasu.net/devCV/)
 
 ## ToDo
 - [ ] Restructure data.json
