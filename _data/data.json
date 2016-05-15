@@ -1,0 +1,87 @@
+{
+   "meta":{
+      "links":{
+          "GitHub":"https://github.com/codenirvana",
+                   "Blog":"https://uditvasu.net/blog",
+                   "LinkedIn":"https://www.linkedin.com/in/uditvasu",
+                   "E-Mail":"mailto:admin@codenirvana.in",
+                   "Twitter":"http://twitter.com/uditdistro",
+                   "Website":"http://www.codenirvana.net"
+      },
+      "quotes":[
+          "Name",
+                   "Others",
+                   "Operating-System",
+                   "Designing",
+                   "Company-name"
+     ],
+     "newSelection":[
+         "Work-experience .second",
+                  "Work-experience .third"
+     ],
+     "newLine":[
+         "Python",
+                  "SASS",
+                  "Bootstrap"
+     ]
+   },
+   "code":{
+       "I-am":{
+           "Name":"Udit Vasu",
+           "LinkedIn":"/uditvasu",
+           "IRC":"#codenirvana",
+           "Twitter":"@uditdistro",
+           "Blog":"/blog",
+           "E-Mail":"admin@codenirvana.in"
+        },
+        "Skills":{
+           "Python":"50%",
+           "C++":"60%",
+           "C":"75%",
+           "Java":"30%",
+           "HTML":"95%",
+           "CSS":"90%",
+           "JavaScript":"60%",
+           "PHP":"65%",
+           "Others":"MySQL, GIT, BASH"
+        },
+        "Skills .CSS":{
+           "SASS":"50%",
+           "Bootstrap":"60%",
+           "Materialize":"80%",
+           "Media-Queries":"98%"
+        },
+        "Skills .JavaScript":{
+           "jQuery":"65%",
+           "AJAX":"90%"
+        },
+        "Tools":{
+           "Editor":"Atom",
+           "Operating-System":"OSX, Fedora",
+           "Designing":"Illustrator, Photoshop"
+        },
+        "Work-experience":{
+           "GitHub":"codenirvana",
+           "Website":"codenirvana.net"
+        },
+        "Work-experience .first":{
+           "Company-name":"Tech Distro",
+           "My-position":"Graphic Designer",
+           "Working-process":"2 Years"
+        },
+        "Work-experience .second":{
+           "Company-name":"DuckDuckGo",
+           "My-position":"Community Leader",
+           "Working-process":"5 Months"
+        },
+        "Work-experience .third":{
+           "Company-name":"Microsoft",
+           "My-position":"Student Partner",
+           "Working-process":"5 Months"
+        }
+  },
+  "comments":{
+      "top":"data.json from <b>uditvasu.net</b>",
+      "bottom":"Fork project @ <a href='https://github.com/codenirvana/devCV'>codenirvana/devCV</a>"
+  }
+}

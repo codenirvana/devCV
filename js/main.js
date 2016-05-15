@@ -64,7 +64,7 @@ $(function() {
                 codeItems.push('<code class="comment-item"><div class="comment">' + comments['bottom'] + '</div></code>');
             }
 
-            $('pre').html(codeItems);
+            //$('pre').html(codeItems);
 
         })
         .done(function() {
