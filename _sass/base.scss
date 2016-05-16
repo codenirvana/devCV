@@ -33,11 +33,11 @@ body {
 main,
 aside,
 aside span,
-pre,
-code,
+.pre,
+.code,
 .code-content,
 .code-content .code-line,
-pre .comment-item .comment {
+.pre .comment-item .comment {
     float: left;
     width: 100%;
 }
@@ -52,12 +52,12 @@ aside {
         @include prefix(user-select, none, webkit moz ms);
     }
 }
-pre {
+.pre {
     width: calc(100% - #{$count-width});
     float: left;
     padding-left: $code-padding-left;
 }
-code {
+.code {
     margin-bottom: $base-line-height;
     &:after {
         content: "}";

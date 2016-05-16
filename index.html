@@ -1,4 +1,5 @@
 ---
+layout: compress
 ---
 <!DOCTYPE html>
 <html lang='en'>
@@ -11,28 +12,25 @@
         <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
     </head>
     <body>
-        <noscript>
-            <h1>{{site.title}}</h1>
-            <h2>{{site.description}}</h2>
-        </noscript>
         <main>
             <aside></aside>
-            <pre style="color:#fff">
-                {% for CODE in site.data.data.code %}
-                    <code>
-                        <span class="code-selection"> {{ CODE[0] }} </span>
+            <div class="pre" style="color:#fff">
+                {% assign DATA = site.data.data %}
+                {% for CODE in DATA.code %}
+                    <div class="code{% if DATA.meta.newSelection contains CODE[0] %} gutter-new{% endif %}">
+                        <span class="code-selection">{{CODE[0]}}</span>
                         <span class="code-content">
                             {% for LINE in CODE[1] %}
-                                <span class="code-line">
-                                    <span class="code-attr"> {{ LINE[0] }} </span>
-                                    <span class="code-value"> {{ LINE[1] }} </span>
+                                <span class="code-line{% if DATA.meta.quotes contains LINE[0] %} value-content{% endif %}{% if DATA.meta.newLine contains LINE[0] %} gutter-new{% endif %}">
+                                    <span class="code-attr">{{LINE[0]}}</span>
+                                    <span class="code-value">{{LINE[1]}}</span>
                                 </span>
                             {% endfor %}
                         </span>
-                    </code>
+                    </div>
                 {% endfor %}
 
-            </pre>
+            </div>
         </main>
         <div class="clearfix"></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js" type="text/javascript"></script>
