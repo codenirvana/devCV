@@ -8,7 +8,7 @@ markdown: kramdown
 sass:
   style: compressed
 compress_html:
-  clippings: all
+  clippings: [html, head, title, meta, link, body, main, aside, script, div, span]
   comments: all
   profile: false
 
