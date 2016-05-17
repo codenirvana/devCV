@@ -30,7 +30,7 @@ layout: compress
                                     {% elsif value contains "%" %}
                                         <span class="code-value value-number">{{value |  remove: '%'}}<span class="value-number-percent">%</span></span>
                                     {% else %}
-                                        <span class="code-value">value</span>
+                                        <span class="code-value">{{value}}</span>
                                     {% endif %}
                                 </span>
                             {% endfor %}
