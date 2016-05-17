@@ -13,7 +13,7 @@ compress_html:
   profile: false
 
 # Theme settings
-theme: solarized
+theme: seti
 
 base-font-size: 16px
 base-font: "Menlo, Consolas, monospace"

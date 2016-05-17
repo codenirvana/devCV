@@ -22,8 +22,16 @@ layout: compress
                         <span class="code-content">
                             {% for LINE in CODE[1] %}
                                 <span class="code-line{% if DATA.meta.quotes contains LINE[0] %} value-content{% endif %}{% if DATA.meta.newLine contains LINE[0] %} gutter-new{% endif %}">
-                                    <span class="code-attr">{{LINE[0]}}</span>
-                                    <span class="code-value">{{LINE[1]}}</span>
+                                    {% assign key = LINE[0] %}
+                                    {% assign value = LINE[1] %}
+                                    <span class="code-attr">{{key}}</span>
+                                    {% if DATA.meta.links contains key %}
+                                        <span class="code-value"><a href="{{DATA.meta.links[key]}}" target="_blank">{{value}}</a></span>
+                                    {% elsif value contains "%" %}
+                                        <span class="code-value value-number">{{value |  remove: '%'}}<span class="value-number-percent">%</span></span>
+                                    {% else %}
+                                        <span class="code-value">value</span>
+                                    {% endif %}
                                 </span>
                             {% endfor %}
                         </span>
