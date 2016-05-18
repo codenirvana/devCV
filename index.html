@@ -16,6 +16,13 @@ layout: compress
             <aside></aside>
             <div class="pre" style="color:#fff">
                 {% assign DATA = site.data.data %}
+
+                {% if DATA.comments contains 'top' %}
+                    <div class="code comment-item">
+                        <div class="comment">{{DATA.comments.top}}</div>
+                    </div>
+                {% endif %}
+
                 {% for CODE in DATA.code %}
                     <div class="code{% if DATA.meta.newSelection contains CODE[0] %} gutter-new{% endif %}">
                         <span class="code-selection">{{CODE[0]}}</span>
@@ -37,6 +44,12 @@ layout: compress
                         </span>
                     </div>
                 {% endfor %}
+
+                {% if DATA.comments.bottom %}
+                    <div class="code comment-item">
+                        <div class="comment">{{DATA.comments.bottom}}</div>
+                    </div>
+                {% endif %}
 
             </div>
         </main>
