@@ -1,4 +1,4 @@
-# :construction: devCV [DEMO](https://uditvasu.net/devCV/)
+# devCV [DEMO](https://uditvasu.net/devCV/)
 
 ## ToDo
 - [ ] Add Installation Guide
