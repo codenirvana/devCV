@@ -2,7 +2,6 @@
     "meta": {
         "links": {
             "GitHub": "https://github.com/codenirvana",
-            "Blog": "https://uditvasu.net/blog",
             "LinkedIn": "https://www.linkedin.com/in/uditvasu",
             "E-Mail": "mailto:admin@codenirvana.in",
             "Twitter": "http://twitter.com/uditdistro",
@@ -31,7 +30,6 @@
             "LinkedIn": "/uditvasu",
             "IRC": "#codenirvana",
             "Twitter": "@uditdistro",
-            "Blog": "/blog",
             "E-Mail": "admin@codenirvana.in"
         },
         "Skills": {
@@ -65,23 +63,18 @@
             "Website": "codenirvana.net"
         },
         "Work-experience .first": {
-            "Company-name": "Tech Distro",
-            "My-position": "Graphic Designer",
-            "Working-process": "2 Years"
-        },
-        "Work-experience .second": {
             "Company-name": "DuckDuckGo",
             "My-position": "Community Leader",
-            "Working-process": "5 Months"
+            "Working-process": "November 2015"
         },
-        "Work-experience .third": {
+        "Work-experience .second": {
             "Company-name": "Microsoft",
             "My-position": "Student Partner",
-            "Working-process": "5 Months"
+            "Working-process": "November 2015"
         }
     },
     "comments": {
         "top": "Fork project @ <a href='https://github.com/codenirvana/devCV'>codenirvana/devCV</a>",
-        "bottom": "Keep On Hacking"
+        "bottom": "Keep On Hacking!"
     }
 }
